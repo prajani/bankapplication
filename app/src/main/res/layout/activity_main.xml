@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mlrit.bankapplication.MainActivity">
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="PIN NO"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter amount"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/b3"
+        android:layout_toStartOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:text="SUBMIT" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="withdrawal"
+        android:layout_above="@+id/b4"
+        android:layout_alignEnd="@+id/b4"
+        android:layout_marginEnd="13dp" />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deposit"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/tv1"
+        android:layout_marginStart="37dp" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="balance enq"
+        android:layout_below="@+id/b3"
+        android:layout_toEndOf="@+id/et1"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit"
+        android:layout_below="@+id/b4"
+        android:layout_alignStart="@+id/b4"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="TextView"
+        android:layout_below="@+id/b5"
+        android:layout_toStartOf="@+id/b5"
+        android:layout_marginEnd="39dp" />
+
+</RelativeLayout>
